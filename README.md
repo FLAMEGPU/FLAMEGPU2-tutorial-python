@@ -32,17 +32,21 @@ A Google Colab-based version of this tutorial will be made available in the futu
 
 ### Running this Tutorial Locally
 
+> **Note**: The notebook currently assumes you are using python 3.6, with CUDA 11.0 on a Linux x86_64 machine. This will be corrected in the future.
+
 To run this tutorial locally you will require:
 
 + Python `>= 3.6`
 + CUDA `>= 11.0` and a [Compute Capability](https://developer.nvidia.com/cuda-gpus) >= 3.5 NVIDIA GPU
-+ Windows or Linux with `glibc >= 2.17`
++ Linux with `glibc >= 2.17`
+  + Windows support/instructions will be introduced at a later date
 + An `x86_64` CPU
   + Including [`NVRTC`](https://docs.nvidia.com/cuda/nvrtc/index.html)
   + If you wish to run this tutorial on an `ppc64le` or `arm64-sbsa` based-system, you will need to build `pyflamegpu` from source.
   Please see the main [FLAMEGPU/FLAMEGPU2](https://github.com/FLAMEGPU/FLAMEGPU2) repository for instructions on building from source.
 
 1. Clone the repository if you have not already done so
+
 2. Create a new python `venv` or conda environment and activate it
   
     ```bash
@@ -51,7 +55,7 @@ To run this tutorial locally you will require:
     source venv/bin/activate
     ```
 
-3. [Install Jupyterlab](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html)
+3. [Install Jupyterlab](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html) (or jupyter notebook)
 
     ```bash
     # I.e. if using a venv and pip
