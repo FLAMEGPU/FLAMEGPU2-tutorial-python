@@ -17,14 +17,15 @@ Please refer to the instructions provided during by the instructor(s) on how to 
 
 If you are interested in an instructor-led delivery of this tutorial, please [contact us](https://flamegpu.com/contact/).
 
-## Self-paced Tutorials
-
-If you wish to follow this tutorial at your own pace, you can run this tutorial locally, or use a hosted service such as Google Colab.
-
 This tutorial was previously delivered at:
 
 + 2021-09-08 [SeptembRSE 2021](https://septembrse.github.io/) [Workshop S1005: FLAME GPU 2: Complex Systems Simulation using GPUs](https://septembrse.github.io/#/event/S1005) 
   + Delivered by Paul Richmond, Matthew Leach, Peter Heywood and Robert Chisholm
+  + [Introductory Talk Recording](https://www.youtube.com/watch?v=kqyAWjaKqsA)
+
+## Self-paced Tutorials
+
+If you wish to follow this tutorial at your own pace, you can run this tutorial locally, or use a hosted service such as Google Colab.
 
 ### Google Colab
 
