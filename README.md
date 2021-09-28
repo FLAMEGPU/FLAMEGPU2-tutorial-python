@@ -28,7 +28,18 @@ This tutorial was previously delivered at:
 
 ### Google Colab
 
-A Google Colab-based version of this tutorial will be made available in the future.
+The tutorial can be completed independently in the browser using Google Colab, which is a hosted fork of Jupyter.
+
+* Open [Google Colab](https://colab.research.google.com/)
+* A dialog box should appear, select the GitHub tab
+* Enter the repository address `https://github.com/FLAMEGPU/FLAMEGPU2-tutorial-python` and hit enter
+* Select the branch `google-colab`
+* Click the listed `.pynb` file, which will open the notebook in a new tab
+* If present, click the "Connect" button in the top right corner
+
+If successful, the Connect button should be replaced with a green tick and RAM/Disk indicators, so it can be used like a regular Jupyter notebook.
+It's possible that a free instance will fail to be allocated, in which case please try again later.
+Free Google Colab instances use a variety of hardware, so performance may vary between instances.
 
 ### Running this Tutorial Locally
 
