@@ -60,7 +60,7 @@ To run this tutorial locally you will require:
 
     ```bash
     # I.e. if using a venv and pip
-    python3 -m pip install -U jupyterlab
+    python3 -m pip install -U jupyterlab matplotlib
     ```
 
 4. Launch `jupyter lab` or the legacy `jupyter notebook` interface and open `FLAME_GPU_2_python_tutorial.ipynb`
@@ -71,3 +71,38 @@ To run this tutorial locally you will require:
     # Using jupyter notebook
     jupyter notebook FLAME_GPU_2_python_tutorial.ipynb
     ```
+
+## Known Issues
+
+### Missing Jitify Compilation Error Messages
+
+Run time compilation of agent functions may fail if there are errors in the agent functions.
+
+These errors are output to `stdout` by [Jitify](https://github.com/nvidia/jitify), a c++ library used to simplify run time compilation via NVRTC.
+
+Older versions of `ipykernel` (`< 6.0.0a5`) do not capture `stdout` or `stderr` from python cells correctly, meaning that the error messages explaining compilation errors are not visible within the notebook.
+
+To avoid this, and have visible error messages please ensure that you are using `ipykernel >= 6.0.0a5`.
+
+> Note: `ipykernel >= 6.0` requires `python >= 3.7`
+
+Alternatively the errors will be visible in the shell the ipython/jupyter server, if this is available to you.
+
+#### Google Colab
+
+Google Colab uses an older version of `ipykernel`, which exhibits this issue.
+
+It is possible to update this, by upgrading `ipykernel` via pip inside the Colab session, and then restarting the kernel.
+
+> **WARNING**: This may cause other errors with package version mismatches
+
+1. Execute the following in a notebook cell in Google Colab
+
+    ```python
+    import sys
+    !{sys.executable} -m pip install -U -q ipython ipykernel>=6.0.0
+    ```
+
+2. Restart the Runtime by either:
+    + `Runtime` > `Restart Runtime` > `Yes`
+    + `ctrl+M .` > `Yes`
