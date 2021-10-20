@@ -29,7 +29,14 @@ If you wish to follow this tutorial at your own pace, you can run this tutorial 
 
 ### Google Colab
 
-A Google Colab-based version of this tutorial will be made available in the future.
+The tutorial can be completed independently in the browser using Google Colab, which is a hosted fork of Jupyter.
+
+* Open the tutorial on [Google Colab](https://colab.research.google.com/github/FLAMEGPU/FLAMEGPU2-tutorial-python/blob/google-colab/FLAME_GPU_2_python_tutorial.ipynb)
+* If present, click the "Connect" button in the top right corner
+
+If successful, the Connect button should be replaced with a green tick and RAM/Disk indicators, so it can be used like a regular Jupyter notebook.
+It's possible that a free instance will fail to be allocated, in which case please try again later.
+Free Google Colab instances use a variety of hardware, so performance may vary between instances.
 
 ### Running this Tutorial Locally
 
