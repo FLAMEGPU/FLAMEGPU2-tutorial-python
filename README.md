@@ -40,13 +40,13 @@ Free Google Colab instances use a variety of hardware, so performance may vary b
 
 ### Running this Tutorial Locally
 
-> **Note**: The notebook currently assumes you are using python 3.6, with CUDA 11.0 on a Linux x86_64 machine. This will be corrected in the future.
+> **Note**: The notebook currently assumes you are using Python >3.10, with CUDA >12.0 on a Linux x86_64 machine. This will be corrected in the future.
 
 To run this tutorial locally you will require:
 
-+ Python `>= 3.6`
-+ CUDA `>= 11.0` and a [Compute Capability](https://developer.nvidia.com/cuda-gpus) >= 3.5 NVIDIA GPU
-+ Linux with `glibc >= 2.17`
++ Python `>= 3.10`
++ CUDA `>= 12.0` and a [Compute Capability](https://developer.nvidia.com/cuda-gpus) >= 5.0 NVIDIA GPU
++ Linux with `glibc >= 2.28`
   + Windows support/instructions will be introduced at a later date
 + An `x86_64` CPU
   + Including [`NVRTC`](https://docs.nvidia.com/cuda/nvrtc/index.html)
@@ -81,35 +81,4 @@ To run this tutorial locally you will require:
 
 ## Known Issues
 
-### Missing Jitify Compilation Error Messages
-
-Run time compilation of agent functions may fail if there are errors in the agent functions.
-
-These errors are output to `stdout` by [Jitify](https://github.com/nvidia/jitify), a c++ library used to simplify run time compilation via NVRTC.
-
-Older versions of `ipykernel` (`< 6.0.0a5`) do not capture `stdout` or `stderr` from python cells correctly, meaning that the error messages explaining compilation errors are not visible within the notebook.
-
-To avoid this, and have visible error messages please ensure that you are using `ipykernel >= 6.0.0a5`.
-
-> Note: `ipykernel >= 6.0` requires `python >= 3.7`
-
-Alternatively the errors will be visible in the shell the ipython/jupyter server, if this is available to you.
-
-#### Google Colab
-
-Google Colab uses an older version of `ipykernel`, which exhibits this issue.
-
-It is possible to update this, by upgrading `ipykernel` via pip inside the Colab session, and then restarting the kernel.
-
-> **WARNING**: This may cause other errors with package version mismatches
-
-1. Execute the following in a notebook cell in Google Colab
-
-    ```python
-    import sys
-    !{sys.executable} -m pip install -U -q ipython ipykernel>=6.0.0
-    ```
-
-2. Restart the Runtime by either:
-    + `Runtime` > `Restart Runtime` > `Yes`
-    + `ctrl+M .` > `Yes`
+None currently.
