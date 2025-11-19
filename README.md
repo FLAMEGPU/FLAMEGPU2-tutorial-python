@@ -32,13 +32,13 @@ A Google Colab-based version of this tutorial will be made available in the futu
 
 ### Running this Tutorial Locally
 
-> **Note**: The notebook currently assumes you are using python 3.6, with CUDA 11.0 on a Linux x86_64 machine. This will be corrected in the future.
+> **Note**: The notebook currently assumes you are using Python >3.10, with CUDA >12.0 on a Linux x86_64 machine. This will be corrected in the future.
 
 To run this tutorial locally you will require:
 
-+ Python `>= 3.6`
-+ CUDA `>= 11.0` and a [Compute Capability](https://developer.nvidia.com/cuda-gpus) >= 3.5 NVIDIA GPU
-+ Linux with `glibc >= 2.17`
++ Python `>= 3.10`
++ CUDA `>= 12.0` and a [Compute Capability](https://developer.nvidia.com/cuda-gpus) >= 5.0 NVIDIA GPU
++ Linux with `glibc >= 2.28`
   + Windows support/instructions will be introduced at a later date
 + An `x86_64` CPU
   + Including [`NVRTC`](https://docs.nvidia.com/cuda/nvrtc/index.html)
