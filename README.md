@@ -32,7 +32,7 @@ A Google Colab-based version of this tutorial will be made available in the futu
 
 ### Running this Tutorial Locally
 
-> **Note**: The notebook currently assumes you are using Python >3.10, with CUDA >12.0 on a Linux x86_64 machine. This will be corrected in the future.
+> **Note**: The notebook currently assumes you are using Python >3.10, with CUDA >13.0 on a Linux x86_64 machine. This will be corrected in the future.
 
 To run this tutorial locally you will require:
 
